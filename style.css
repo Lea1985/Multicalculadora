@@ -1,0 +1,130 @@
+table {
+    width: 350;
+    height: 500px;
+}
+
+td {
+    width: 100px;
+    text-align: center;
+}
+
+input {
+    width: 94%;
+    height: 35px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    background-color: #ffa826;
+    text-align: center;
+    font-size: 20px;
+}
+
+i {
+    margin: 0px auto;
+    color: #ffa826;
+    font-size: 30px;
+}
+
+#calculadora {
+    border: 1px solid black;
+    padding: 10px;
+    /* background-color: #232323;*/
+    background: linear-gradient(to bottom, black, #423535);
+    display: inline-block;
+    margin: 0px auto;
+    border-radius: 15px;
+}
+
+#calFechas {
+    border: 1px solid black;
+    width: 420px;
+    height: 660px;
+    padding: 10px;
+    background-color: #232323;
+    display: none;
+    margin: 0px auto;
+    border-radius: 15px;
+}
+
+#contInput,
+#contBotonera {
+    margin: 10px;
+    padding: 10px;
+}
+
+#resul {
+    margin: 18%;
+    font-size: 22px;
+}
+
+#lineaPantalla {
+    font-size: 45px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 380px;
+    overflow: auto;
+}
+
+#panel,
+.pantalla {
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.72) inset;
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.72) inset;
+    -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.72) inset;
+    height: 150px;
+    width: 380px;
+    border: 1px solid black;
+    display: inline-block;
+    border-radius: 30px;
+    background-color: #f2a32c;
+}
+
+.contenedor {
+    text-align: center;
+    padding: 5px;
+}
+
+.btn {
+    border: 1px solid antiquewhite;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 3px 4px 0px 0px #899599;
+    background: linear-gradient(to bottom, #423535, black);
+}
+
+.btn:active {
+    position: relative;
+    top: 1px;
+}
+
+.valorMonitor {
+    font-size: 20px;
+}
+
+.obtenerFec {
+    box-shadow: 3px 4px 0px 0px #899599;
+    background: linear-gradient(to bottom, #423535, black);
+    background-color: #ededed;
+    border-radius: 15px;
+    border: 1px solid #d6bcd6;
+    display: block;
+    cursor: pointer;
+    color: #ffa826;
+    font-family: Arial;
+    font-size: 20px;
+    padding: 7px 25px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #e1e2ed;
+    margin-bottom: 22px;
+    height: 50px;
+    display: grid;
+    align-items: center;
+}
+
+.obtenerFec:active {
+    position: relative;
+    top: 1px;
+}

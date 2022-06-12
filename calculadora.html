@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Calculadora</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/1eca4ee037.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<!-- onclick="myFunction(event)" -->
+
+<body onclick="myFunction(event)">
+    <div class="contenedor">
+
+        <div id="calFechas">
+            <div id="panel">
+
+                <div id="resul">
+                    <span id="anios">Años</span>
+                    <span id="meses">Meses</span>
+                    <span id="dias">Días</span>
+
+                </div>
+            </div>
+            <div id="contInput">
+                <input type="date" name="num" step="2" id="num" value="" size="20" />
+                <input type="date" name="num2" step="2" id="num1" value="" size="20" />
+            </div>
+
+            <div id="contBotonera">
+                <a class="obtenerFec">Obtener</a>
+                <a id="limpiarFechas" class="obtenerFec">Limpiar Fechas</a>
+                <a id="volverCalcu" class="obtenerFec">Volver</a>
+            </div>
+
+        </div>
+
+        <div id="calculadora" class="visible">
+            <div id="pantalla" class="pantalla">
+                <p id=lineaPantalla></p>
+            </div>
+
+            <table>
+                <tr>
+                    <td class="contBtn">
+                        <div id="limPantalla" class="btn" value="limPantalla"><i id="limPantalla" class="fa-solid fa-arrow-down-up-across-line" value="limPantalla"></i></div>
+                    </td>
+                    <td class="contBtn">
+                        <div id="borrar" class="btn" value="borrar"><i id="borrar" class="fa-solid fa-right-to-bracket" value="borrar"></i></div>
+                    </td>
+                    <td class="contBtn">
+                        <div id="porcentaje" class="btn" value="porcentaje"><i id="porcentaje" class="fa-solid fa-percent" value="porcentaje"></i></div>
+                    </td>
+                    <td class="contBtn">
+                        <div id="dividir" class="btn operador" value="/"><i id="dividir" class="fa-solid fa-divide" value="/"></i></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="contBtn">
+                        <div id="siete" class="btn numero" value="7"><i id="siete" class="fa-solid fa-7" value="7"></i></div>
+                    </td>
+                    <td class="contBtn">
+                        <div id="ocho" class="btn numero" value="8"><i id="ocho" class="fa-solid fa-8" value="8"></i></div>
+                    </td>
+                    <td class="contBtn">
+                        <div id="nueve" class="btn numero" value="9"><i id="nueve" class="fa-solid fa-9" value="9"></i></div>
+                    </td>
+                    <td class="contBtn">
+                        <div id="multiplicar" class="btn operador" value="*"><i id="multiplicar" class="fa-solid fa-xmark" value="*"></i></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="contBtn">
+                        <div id="cuatro" class="btn numero" value="4"><i id="cuatro" class="fa-solid fa-4" value="4"></i></div>
+                    </td>
+                    <td class="contBtn">
+                        <div id="cinco" class="btn numero" value="5"><i id="cinco" class="fa-solid fa-5" value="5"></i></div>
+                    </td>
+                    <td class="contBtn">
+                        <div id="seis" class="btn numero" value="6"><i id="seis" class="fa-solid fa-6" value="6"></i></div>
+                    </td>
+                    <td class="contBtn">
+                        <div id="restar" class="btn operador" value="-"><i id="restar" class="fa-solid fa-minus" value="-"></i></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="contBtn">
+                        <div id="uno" class="btn numero" value="1"><i id="uno" class="fa-solid fa-1" value="1"></i></div>
+                    </td>
+                    <td class="contBtn">
+                        <div id="dos" class="btn numero" value="2"><i id="dos" class="fa-solid fa-2" value="2"></i></div>
+                    </td>
+                    <td class="contBtn">
+                        <div id="tres" class="btn numero" value="3"><i id="tres" class="fa-solid fa-3" value="3"></i></div>
+                    </td>
+                    <td class="contBtn">
+                        <div id="sumar" class="btn operador" value="+"><i id="sumar" class="fa-solid fa-plus" value="+"></i></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="contBtn">
+                        <div id="calcuFechas" class="btn operador" value="spock"><i id="calcuFechas" class="fa-regular fa-hand-spock" value="spock"></i></div>
+                    </td>
+                    <td>
+
+                        <div id="cero" class="btn numero" value="0"><i id="cero" class="fa-solid fa-0" value="0"></i></div>
+
+                    </td>
+
+
+                    <td class="contBtn">
+                        <div id="dot" class="btn operador" value="."><i id="dot" class="fa-solid fa-circle" value="."></i></div>
+
+                    </td>
+                    <td class="contBtn">
+                        <div id="igual" class="btn operador" value="="><i id="igual" class="fa-solid fa-equals" value="="></i></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+
+    </div>
+
+    <script src="reglas.js"></script>
+</body>
